@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<!-- Primary Search Engine Tags -->
-<title>Pousada Tendawa | B&B Altamente Avaliado em Alter do Chão, Brasil</title>
-<link rel="icon" type="image/x-icon" href="favicon.jpeg">
 
-<meta name="description" content="Reserve sua estadia diretamente na Pousada Tendawa em Alter do Chão. Suítes altamente avaliadas no 'Preferido dos Hóspedes', localização central, café da manhã tropical diário e hospitalidade local com especialistas.">
-<meta name="keywords" content="Pousada Tendawa, pousada Alter do Chao, hotéis Alter do Chao, hotel Alter do Chao, Suellem Esquerdo, hospedagem Alter do Chao, bed and breakfast na Amazonia">
+<title>Pousada Tendawa | Top-Rated B&B in Alter do Chão, Brazil</title>
+  <link rel="icon" type="image/x-icon" href="favicon.jpeg">
+<meta name="description" content="Book your stay directly at Pousada Tendawa in Alter do Chão. Highly-rated Guest Favorite suites, central location, daily tropical breakfast, and expert local hosting.">
+<meta name="keywords" content="Pousada Tendawa, Alter do Chao pousada, Alter do Chao hotels, hotel Alter do Chao, Suellem Esquerdo, accommodation Alter do Chao, Amazon bed and breakfast">
 <meta name="robots" content="index, follow">
 
-<!-- Open Graph / Facebook / Instagram Tags (For clean previews when links are shared on social media or WhatsApp) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Pousada Tendawa | Refúgio Paradisíaco em Altea do Chão">
-<meta property="og:description" content="Viva o paraíso. Suítes altamente avaliadas, café da manhã tropical diário e uma localização central e tranquila em Alter do Chão. Reserve direto e economize.">
+<meta property="og:title" content="Pousada Tendawa | Pristine Escape in Alter do Chão">
+<meta property="og:description" content="Experience paradise. Highly-rated suites, daily tropical breakfast, and a central, quiet location in Alter do Chão. Book direct and save.">
 <meta property="og:image" content="outside5.jpg"> 
 
-<!-- Viewport Tag (Crucial for ensuring Google recognizes the site as mobile-friendly) -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -58,22 +55,23 @@ h2, h3, h4, p {
   background-color: #111B30; /* Deeper Indigo Black */
 }
 
-/* Align the last item (the language flag) to the right side of the navbar */
-.navbar li.lang-selector {
-  margin-left: auto;
+/* Brazilian Flag Menu Item Placement */
+.navbar li.nav-flag {
+  margin-left: auto; /* Pushes the flag item to the far right side */
 }
-
-/* Style the flag image inside the navigation link */
-.navbar li.lang-selector a img {
-  width: 28px;        /* Sets a clean, standard size for the flag */
+.navbar li.nav-flag a {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px; /* Slightly tighter vertical padding for flag alignment */
+}
+.flag-icon {
+  width: 32px;
   height: auto;
-  vertical-align: middle;
-  border-radius: 2px; /* Softens the sharp corners of the flag icon */
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
   transition: transform 0.2s ease;
 }
-
-/* Add a subtle hover effect to the flag */
-.navbar li.lang-selector a:hover img {
+.navbar li.nav-flag a:hover .flag-icon {
   transform: scale(1.1);
 }
 
@@ -422,21 +420,23 @@ div.gallery-item div.desc {
 
 @media only screen and (max-width: 768px) {  
   .navbar li a { padding: 20px 15px; font-size: 0.9rem; }  
+  .navbar li.nav-flag a { padding: 12px 15px; }
+  .flag-icon { width: 26px; }
   .hero { height: 250px; }  
   .hero .slogan { font-size: 1.6rem; }  
   .trust-badge-content { flex-direction: column; gap: 25px; }  
-  .even_div, .section, div.gallery-wrapper, .form-container, .main-footer { padding: 40px 20px; }  
+  .even_div, .section, div.gallery-wrapper, .form-container, .main-footer { padding: 40px 20px; }    
   div.gallery-item {    
     width: calc(50% - 10px);  
-  }  
+  }    
   .form-group-row {    
     flex-direction: column;    
     gap: 20px;  
-  }  
+  }    
   .footer-content {    
     flex-direction: column;    
     gap: 30px;  
-  }  
+  }    
   .footer-bottom {    
     flex-direction: column;    
     gap: 15px;    
@@ -453,235 +453,207 @@ div.gallery-item div.desc {
 </head>
 <body>
 
-<!-- NAVIGATION BAR -->
 <ul class="navbar">  
-  <li><a href="#home">Início</a></li>  
-  <li><a href="#about">Sobre Nós</a></li>  
-  <li><a href="#gallery">Galeria</a></li>  
-  <li><a href="#book">Reserve Já</a></li>
-    <!-- UK Flag Language Switcher aligned to the top right -->
-  <li class="lang-selector">
-    <a href="index_en.html" title="Switch to English">
-      <img src="Flag_of_the_United_Kingdom.svg.webp" alt="English Version">
+  <li><a href="#home">Home</a></li>  
+  <li><a href="#about">About</a></li>  
+  <li><a href="#gallery">Gallery</a></li>  
+  <li><a href="#book">Book Now</a></li>
+  <li class="nav-flag">
+    <a href="index.html">
+      <img src="Flag_of_Brazil.svg.webp" alt="Versão em Português" class="flag-icon">
     </a>
   </li>
 </ul>
 
-<!-- HERO FRAME -->
 <div id="home" class="hero">  
-  <img src="outside5.jpg" alt="Pátio da Pousada Tendawa">  
-  <h1 class="slogan">Viva o Paraíso na Pousada Tendawa</h1>
+  <img src="outside5.jpg" alt="Pousada Tendawa Grounds">  
+  <h1 class="slogan">Experience Paradise at Pousada Tendawa</h1>
 </div>
 
-<!-- TRUST SOCIAL PROOF SECTION -->
 <div class="trust-badge-container">  
   <div class="trust-badge-content">    
     <div class="badge-item">      
-      <span class="badge-title">Status no Airbnb</span>      
-      <span class="badge-value">🏆 Preferido dos Hóspedes</span>    
+      <span class="badge-title">Airbnb Status</span>      
+      <span class="badge-value">🏆 Guest Favorite</span>    
     </div>    
     <div class="badge-item">      
-      <span class="badge-title">Avaliação dos Hóspedes</span>      
+      <span class="badge-title">Guest Rating</span>      
       <span class="badge-value">4.87 / 5.0</span>      
       <span class="badge-stars">★★★★★</span>    
     </div>    
     <div class="badge-item">      
-      <span class="badge-title">Localização Verificada</span>      
-      <span class="badge-desc">"Excelente localização — 100% dos hóspedes recentes deram 5 estrelas ao processo de check-in."</span>    
+      <span class="badge-title">Verified Location</span>      
+      <span class="badge-desc">"Unbeatable location — 100% of recent guests gave check-in a 5-star rating."</span>    
     </div>  
   </div>
 </div>
 
-<!-- ABOUT US BLOCK -->
 <div id="about" class="even_div">  
   <p>    
-    Bem-vindo à <strong>Pousada Tendawa</strong>, administrada com carinho por Suellem Esquerdo.    
-    Escondido no coração de Alter do Chão, o nosso bed and breakfast foi projetado para    
-    viajantes que buscam o máximo em conforto, localização central e a autêntica energia amazônica — sem barulho.  
+    Welcome to <strong>Pousada Tendawa</strong>, hosted with care by Suellem Esquerdo.     
+    Tucked away in the heart of Alter do Chão, our bed and breakfast is designed for     
+    travelers seeking top-tier comfort, a central location, and authentic Amazon vibes — without the noise.  
   </p>  
   <p>    
-    Alter do Chão abriga algumas das praias de água doce mais espetaculares do planeta.    
-    Hospedar-se em um lugar tranquilo, central e meticulosamente cuidado transforma completamente a sua viagem.  
+    Alter do Chão is home to some of the most spectacular freshwater beaches on Earth.     
+    Staying somewhere quiet, central, and meticulously hosted completely shifts your journey.  
   </p>  
-  <p><strong>O que te espera na Pousada Tendawa:</strong></p>  
+  <p><strong>What awaits you at Pousada Tendawa:</strong></p>  
   <ul class="features">    
-    <li>Localização central — caminhe poucos passos até a orla</li>    
-    <li>Suítes tranquilas, impecáveis e com ar-condicionado</li>    
-    <li>Café da manhã tropical fresco cortesia incluído diariamente</li>    
-    <li>Acesso Wi-Fi de alta velocidade e experiência de check-in facilitada</li>    
-    <li>Anfitriã local experiente e com profundas raízes na região</li>  
+    <li>Central location — stroll effortlessly down to the waterfront</li>    
+    <li>Quiet, pristine, air-conditioned suites</li>    
+    <li>Complimentary fresh tropical breakfast included daily</li>    
+    <li>High-speed Wi-Fi access & easy check-in experience</li>    
+    <li>Experienced local hosting with deep roots in the region</li>  
   </ul>
 </div>
 
-<!-- REGION HIGHLIGHT BLOCK -->
 <div class="section">  
   <div class="section-content">    
-    <h3>Descubra a Magia da Amazônia</h3>    
+    <h3>Discover the Magic of the Amazon</h3>    
     <p>      
-      Seja para navegar pelas águas cristalinas do Rio Tapajós,      
-      fazer trilhas em florestas nacionais exuberantes ou assistir a um pôr do sol inesquecível na Ponta do Cururu,      
-      nossa equipe está aqui para ajudar você a organizar o roteiro perfeito. Experimente os melhores      
-      passeios de barco, a culinária local e os cantinhos escondidos que só os moradores conhecem.    
+      Whether you want to sail along the crystal-clear waters of the Tapajós River,       
+      trek through lush national forests, or watch an unforgettable sunset at Ponta do Cururu,       
+      our team is here to help you organize the perfect itinerary. Experience the best       
+      boat tours, local cuisine, and hidden spots that only the locals know about.    
     </p>  
   </div>
 </div>
 
-<!-- INTEGRATED GALLERY BLOCK -->
 <div id="gallery" class="gallery-wrapper">    
   <div class="gallery-header">    
-    <h2>Galeria da Propriedade</h2>    
-    <h4>Um vislumbre do seu próximo refúgio amazônico</h4>  
+    <h2>Our Property Gallery</h2>    
+    <h4>A glimpse into your next Amazonian getaway</h4>  
   </div>  
   
   <div class="gallery">    
-    <!-- Image 1 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside1.jpg">        
-        <img src="outside1.jpg" alt="Vista Aérea da Pousada Tendawa com Painéis Solares" width="600" height="400">      
+        <img src="outside1.jpg" alt="Pousada Tendawa Aerial Solar Panels View" width="600" height="400">      
       </a>      
-      <div class="desc">Vista Aérea e Painéis Solares</div>    
+      <div class="desc">Aerial View & Solar Panels</div>    
     </div>    
     
-    <!-- Image 2 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside2.jpg">        
-        <img src="outside2.jpg" alt="Vista de Drone da Vizinhança da Pousada Tendawa" width="600" height="400">      
+        <img src="outside2.jpg" alt="Pousada Tendawa Neighborhood Drone View" width="600" height="400">      
       </a>      
-      <div class="desc">Vista de Drone do Bairro</div>    
+      <div class="desc">Neighborhood Drone View</div>    
     </div>    
     
-    <!-- Image 3 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside3.jpg">        
-        <img src="outside3.jpg" alt="Vista da Propriedade em Ângulo Superior" width="600" height="400">      
+        <img src="outside3.jpg" alt="Pousada Tendawa Bird's-Eye Property View" width="600" height="400">      
       </a>      
-      <div class="desc">Vista Superior da Propriedade</div>    
+      <div class="desc">Bird's-Eye Property View</div>    
     </div>    
     
-    <!-- Image 4 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside4.jpg">        
-        <img src="outside4.jpg" alt="Entrada Principal e Letreiro da Pousada Tendawa" width="600" height="400">      
+        <img src="outside4.jpg" alt="Pousada Tendawa Main Entrance and Signage" width="600" height="400">      
       </a>      
-      <div class="desc">Entrada Principal e Letreiro</div>    
+      <div class="desc">Main Entrance & Signage</div>    
     </div>    
     
-    <!-- Image 5 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside5.jpg">        
-        <img src="outside5.jpg" alt="Portão de Entrada com Ladrilhos da Pousada Tendawa" width="600" height="400">      
+        <img src="outside5.jpg" alt="Pousada Tendawa Tiled Entrance Gate" width="600" height="400">      
       </a>      
-      <div class="desc">Portão de Entrada Ladrilhado</div>    
+      <div class="desc">Tiled Entrance Gate</div>    
     </div>    
     
-    <!-- Image 6 -->    
     <div class="gallery-item">      
       <a target="_blank" href="outside6.jpg">        
-        <img src="outside6.jpg" alt="Pátio Interno e Área de Redes da Pousada Tendawa" width="600" height="400">      
+        <img src="outside6.jpg" alt="Pousada Tendawa Courtyard and Hammock Area" width="600" height="400">      
       </a>      
-      <div class="desc">Pátio e Área das Redes</div>    
+      <div class="desc">Courtyard & Hammock Area</div>    
     </div>    
     
 
-    <!-- Image 8 -->    
+    
     <div class="gallery-item">      
       <a target="_blank" href="outside9.jpg">        
-        <img src="outside9.jpg" alt="Copa de Árvores Tropicais na Pousada Tendawa" width="600" height="400">      
+        <img src="outside9.jpg" alt="Pousada Tendawa Lush Tropical Canopy" width="600" height="400">      
       </a>      
-      <div class="desc">Copa Tropical Exuberante</div>    
-    </div>    
-    
-    <!-- Image 7 -->    
-    <div class="gallery-item">      
-      <a target="_blank" href="foto1.jpeg">        
-        <img src="foto1.jpeg" alt="Quarto de pousada tropical" width="600" height="400">      
-      </a>      
-      <div class="desc">Quarto de pousada tropical</div>    
-    </div>    
-    
+      <div class="desc">Lush Tropical Canopy</div>    
+    </div>   
 
-    <!-- Image 9 -->    
+        <div class="gallery-item">      
+      <a target="_blank" href="foto1.jpeg">        
+        <img src="foto1.jpeg" alt="Bright tropical pousada bedroom" width="600" height="400">      
+      </a>      
+      <div class="desc">Bright tropical pousada bedroom</div>    
+    </div>     
+    
     <div class="gallery-item">      
       <a target="_blank" href="TendawaPousada-2.jpg">        
-        <img src="TendawaPousada-2.jpg" alt="Logotipo Pintado à Mão da Pousada Tendawa" width="600" height="400">      
+        <img src="TendawaPousada-2.jpg" alt="Pousada Tendawa Hand-Painted Property Logo" width="600" height="400">      
       </a>      
-      <div class="desc">Logotipo Pintado à Mão</div>    
+      <div class="desc">Hand-Painted Property Logo</div>    
     </div>    
     
-    <!-- Image 10 -->    
     <div class="gallery-item">      
       <a target="_blank" href="IMG_4525.jpg">        
-        <img src="IMG_4525.jpg" alt="Suíte Limpa e Minimalista da Pousada Tendawa" width="600" height="400">      
+        <img src="IMG_4525.jpg" alt="Pousada Tendawa Clean and Minimalist Suite" width="600" height="400">      
       </a>      
-      <div class="desc">Suíte Clean e Minimalista</div>    
+      <div class="desc">Clean & Minimalist Suite</div>    
     </div>    
     
-    <!-- Image 11 -->    
     <div class="gallery-item">      
       <a target="_blank" href="IMG_4527.jpg">        
-        <img src="IMG_4527.jpg" alt="Chuveiro Moderno" width="600" height="400">      
+        <img src="IMG_4527.jpg" alt="Modern Shower" width="600" height="400">      
       </a>      
-      <div class="desc">Chuveiro Moderno</div>    
+      <div class="desc">Modern Shower</div>    
     </div>    
     
-    <!-- Image 12 -->    
     <div class="gallery-item">      
       <a target="_blank" href="IMG_4530.jpg">        
-        <img src="IMG_4530.jpg" alt="Interiores Modernos das Suítes da Pousada Tendawa" width="600" height="400">      
+        <img src="IMG_4530.jpg" alt="Pousada Tendawa Modern Suite Interiors" width="600" height="400">      
       </a>      
-      <div class="desc">Interior Moderno das Suítes</div>    
+      <div class="desc">Modern Suite Interiors</div>    
     </div>    
     
-    <!-- Image 13 -->    
     <div class="gallery-item">      
       <a target="_blank" href="IMG_4535.jpg">        
-        <img src="IMG_4535.jpg" alt="Cama de Casal Aconchegante com Iluminação Quente" width="600" height="400">      
+        <img src="IMG_4535.jpg" alt="Pousada Tendawa Cozy Double Bed with Warm Lighting" width="600" height="400">      
       </a>      
-      <div class="desc">Cama de Casal com Luz Quente</div>    
+      <div class="desc">Cozy Double Bed with Warm Lighting</div>    
     </div>    
     
-    <!-- Image 14 -->    
     <div class="gallery-item">      
       <a target="_blank" href="IMG_4536.jpg">        
-        <img src="IMG_4536.jpg" alt="Banheiro Moderno com Box de Vidro na Pousada Tendawa" width="600" height="400">      
+        <img src="IMG_4536.jpg" alt="Pousada Tendawa Modern Bathroom with Glass Shower" width="600" height="400">      
       </a>      
-      <div class="desc">Banheiro Moderno com Box</div>    
+      <div class="desc">Modern Bathroom with Glass Shower</div>    
     </div>    
     
-    <!-- Image 15 -->    
     <div class="gallery-item">      
       <a target="_blank" href="Tendawa Pousada-6.jpg">        
-        <img src="Tendawa Pousada-6.jpg" alt="Disposição do Quarto Triplo com Camas de Solteiro" width="600" height="400">      
+        <img src="Tendawa Pousada-6.jpg" alt="Pousada Tendawa Triple Room Layout with Single Beds" width="600" height="400">      
       </a>      
-      <div class="desc">Quarto Triplo com Camas de Solteiro</div>    
+      <div class="desc">Triple Room Layout with Single Beds</div>    
     </div>    
     
-    <!-- Image 16 -->    
     <div class="gallery-item">      
       <a target="_blank" href="Tendawa Pousada-13.jpg">        
-        <img src="Tendawa Pousada-13.jpg" alt="Suíte de Casal Iluminada com Vista da Janela" width="600" height="400">      
+        <img src="Tendawa Pousada-13.jpg" alt="Pousada Tendawa Bright Double Suite with Window View" width="600" height="400">      
       </a>      
-      <div class="desc">Suíte de Casal com Vista da Janela</div>    
+      <div class="desc">Bright Double Suite with Window View</div>    
     </div>  
-  </div> <!-- This closes .gallery -->
-</div> <!-- This closes .gallery-wrapper -->  
-
-<!-- BOOKING & MAP SECTION -->
-<div id="book" class="booking-location-section">  
-  <!-- LEFT PANEL: INQUIRY FORM -->  
+  </div> </div> <div id="book" class="booking-location-section">    
   <div class="form-container">    
-    <h2>Solicite sua Estadia</h2>    
-    <p>Reserve diretamente com a Suellem para evitar as taxas de plataformas de terceiros. Verificaremos a disponibilidade e responderemos em até 24 horas.</p>         
+    <h2>Request Your Stay</h2>    
+    <p>Book directly with Suellem to skip third-party platform fees. We will check availability and answer within 24 hours.</p>        
     
     <form class="booking-form" id="directBookingForm">      
       <div class="form-group">        
-        <label for="name">Nome Completo</label>        
-        <input type="text" id="name" name="name" placeholder="João Silva" required>      
+        <label for="name">Full Name</label>        
+        <input type="text" id="name" name="name" placeholder="John Doe" required>      
       </div>            
       
       <div class="form-group">        
-        <label for="email">Endereço de E-mail</label>        
-        <input type="email" id="email" name="email" placeholder="joao@exemplo.com" required>      
+        <label for="email">Email Address</label>        
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>      
       </div>            
       
       <div class="form-group-row">        
@@ -693,18 +665,19 @@ div.gallery-item div.desc {
           <label for="checkout">Check-Out</label>          
           <input type="date" id="checkout" name="checkout" required>        
         </div>      
-      </div>                    
-      
-      <div class="form-group">        
-        <label for="notes">Pedidos Especiais / Observações</label>        
-        <textarea id="notes" name="notes" rows="4" placeholder="Conte-nos sobre o horário do seu voo, interesse em passeios de barco ou restrições alimentares..."></textarea>      
       </div>            
       
-      <button type="submit" class="submit-btn">Consultar Disponibilidade Direta</button>    
+    
+      
+      <div class="form-group">        
+        <label for="notes">Special Requests / Notes</label>        
+        <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your flight arrival time, boat tours, or dietary needs..."></textarea>      
+      </div>            
+      
+      <button type="submit" class="submit-btn">Check Direct Availability</button>    
     </form>  
   </div>    
   
-  <!-- RIGHT PANEL: GOOGLE MAPS EMBED -->  
   <div class="map-container">    
     <iframe       
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.582845347209!2d-54.956714!3d-2.5075678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9288532d70080cd7%3A0x471fed54795b9617!2sPousada%20Tendawa!5e0!3m2!1sen!2sUS!4v1718475000000!5m2!1sen!2sUS"      
@@ -715,28 +688,27 @@ div.gallery-item div.desc {
   </div>  
 </div>
 
-<!-- FOOTER -->
 <footer class="main-footer">  
   <div class="footer-content">        
     <div class="footer-column">      
       <h3>Pousada Tendawa</h3>      
-      <p>Seu refúgio impecável e altamente avaliado, escondido no paraíso de águas doces de Alter do Chão, Brasil.</p>    
+      <p>Your pristine, highly-rated escape hidden away in the freshwater paradise of Alter do Chão, Brazil.</p>    
     </div>        
     
     <div class="footer-column">      
-      <h3>Links Rápidos</h3>      
+      <h3>Quick Links</h3>      
       <ul>        
-        <li><a href="#home">Voltar ao Topo</a></li>        
-        <li><a href="#about">Nossa História</a></li>        
-        <li><a href="#gallery">Galeria de Fotos</a></li>        
-        <li><a href="#book">Tarifas e Disponibilidade</a></li>      
+        <li><a href="#home">Back to Top</a></li>        
+        <li><a href="#about">Our Story</a></li>        
+        <li><a href="#gallery">Photo Gallery</a></li>        
+        <li><a href="#book">Rates & Availability</a></li>      
       </ul>    
     </div>        
     
     <div class="footer-column contact-info">      
-      <h3>Contato</h3>      
+      <h3>Contact Us</h3>      
       <ul>        
-        <li><strong>📍 Endereço:</strong> Alter do Chão, Santarém, Pará</li>        
+        <li><strong>📍 Location:</strong> Alter do Chão, Santarém, Pará</li>        
         <li><strong>📸 Instagram:</strong> <a href="https://www.instagram.com/pousadatendawa2025?igsh=MXZtMHJ2dXAwdW83bw==" target="_blank">@pousadatendawa2025</a></li>        
         <li><strong>📞 WhatsApp:</strong> +55 (93) 8111-8716</li>      
       </ul>    
@@ -744,12 +716,11 @@ div.gallery-item div.desc {
   </div>    
   
   <div class="footer-bottom">    
-    <p>© 2026 Pousada Tendawa. Todos os Direitos Reservados.</p>    
-    <p>Projetado com carinho para o estilo de vida da Amazônia.</p>  
+    <p>© 2026 Pousada Tendawa. All Rights Reserved.</p>    
+    <p>Designed with care for the Amazon lifestyle.</p>  
   </div>
 </footer>
 
-<!-- INTERACTIVE WHATSAPP INTEGRATION SCRIPT -->
 <script>
 document.getElementById('directBookingForm').addEventListener('submit', function(event) {  
   // Prevent page reload  
@@ -759,22 +730,22 @@ document.getElementById('directBookingForm').addEventListener('submit', function
   const name = document.getElementById('name').value;  
   const email = document.getElementById('email').value;  
   const checkin = document.getElementById('checkin').value;  
-  const checkout = document.getElementById('checkout').value;  
+  const checkout = document.getElementById('checkout').value;   
   const notes = document.getElementById('notes').value;  
   
   // Standard API formatting format for Suellem's 8-series number string  
   const suellemPhoneNumber = "559381118716";   
   
-  // Format a polite, clear markdown text string for WhatsApp in Portuguese
-  let message = `Olá Suellem! Gostaria de verificar a disponibilidade para uma reserva direta na Pousada Tendawa:\n\n`;  
-  message += `• *Nome:* ${name}\n`;  
-  message += `• *E-mail:* ${email}\n`;  
+  // Format a polite, clear markdown text string for WhatsApp   
+  let message = `Olá Suellem! I would like to check availability for a direct booking at Pousada Tendawa:\n\n`;  
+  message += `• *Name:* ${name}\n`;  
+  message += `• *Email:* ${email}\n`;  
   message += `• *Check-in:* ${checkin}\n`;  
   message += `• *Check-out:* ${checkout}\n`;  
-
+  
   
   if(notes.trim() !== "") {    
-    message += `• *Observações/Pedidos:* ${notes}\n`;  
+    message += `• *Notes/Requests:* ${notes}\n`;  
   }  
   
   // URL encode the text safely so spaces and emojis don't break the web link  
